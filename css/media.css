@@ -267,26 +267,26 @@
     }
 
 }
+/* price plane  */
 
-/* Default: hide both */
-.desktop,
+/* .desktop,
 .mobile {
     display: none;
 }
 
-/* Show on screens wider than 768px (desktop) */
+
 @media (min-width: 1056px) {
     .desktop {
         display: block;
     }
 }
 
-/* Show on screens 768px and below (mobile) */
+
 @media (max-width: 1055px) {
     .mobile {
         display: block;
     }
-}
+} */
 
 
 /* Default: hide both (optional fallback) */
