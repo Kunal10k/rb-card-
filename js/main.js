@@ -72,32 +72,53 @@
 
 
 
-gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 
-// Select all elements with class `.animate` or attribute `[animate]`
-const elementsToAnimate = [...document.querySelectorAll('.animate'), ...document.querySelectorAll('[animate]')];
+ // Select all elements with class `.animate` or attribute `[animate]`
+ const elementsToAnimate = [...document.querySelectorAll('.animate'), ...document.querySelectorAll('[animate]')];
 
-elementsToAnimate.forEach(el => {
-  // Split text into lines, words, chars within each element
-  new SplitType(el, {
-    types: 'lines, words, chars',
-    tagName: 'span'
-  });
+ elementsToAnimate.forEach(el => {
+     // Split text into lines, words, chars within each element
+     new SplitType(el, {
+         types: 'lines, words, chars',
+         tagName: 'span'
+     });
 
-  // Animate the chars inside the current element
-  gsap.from(el.querySelectorAll('.char'), {
-    y: '100%',            // slide up from below
-    opacity: 0,           // fade in from 0
-    duration: 0.5,
-    ease: 'power1.out',
-    stagger: 0.05,
-    scrollTrigger: {
-      trigger: el,
-      start: 'top 80%',
-      toggleActions: 'play none none none', // play only once
-      // scrub: true, // uncomment if you want scrub effect
-      markers: false
-    }
-  });
-});
+     // Animate the chars inside the current element
+     gsap.from(el.querySelectorAll('.char'), {
+         y: '100%', // slide up from below
+         opacity: 0, // fade in from 0
+         duration: 0.5,
+         ease: 'power1.out',
+         stagger: 0.05,
+         scrollTrigger: {
+             trigger: el,
+             start: 'top 80%',
+             toggleActions: 'play none none none', // play only once
+             // scrub: true, // uncomment if you want scrub effect
+             markers: false
+         }
+     });
+ });
 
+
+
+ // back to top 
+
+
+ const backToTopButton = document.getElementById("backToTop");
+
+ window.addEventListener("scroll", () => {
+     if (window.scrollY > 300) {
+         backToTopButton.classList.add("visible");
+     } else {
+         backToTopButton.classList.remove("visible");
+     }
+ });
+
+ backToTopButton.addEventListener("click", () => {
+     window.scrollTo({
+         top: 0,
+         behavior: "smooth"
+     });
+ });
