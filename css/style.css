@@ -541,7 +541,8 @@ img.hero-image-2 {
 .ban2 {
     width: 100%;
     height: auto;
-    margin-top: 42px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .bg-color-edf1ee {
@@ -612,8 +613,8 @@ button#toggleBtn:hover {
 .ban3 {
     width: 100%;
     height: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .faq-content {
@@ -689,11 +690,12 @@ footer {
 }
 
 .newsletter {
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 }
 
 .newsletter.two .newsletter-btn {
-    text-align: end;
+    text-align: left;
+    margin-left: 1.3rem;
 }
 
 .text-white {
@@ -718,7 +720,7 @@ footer {
 
 .footer-weight h3,
 .footer-weight .h3 {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
 }
 
 .default-btn.three {
