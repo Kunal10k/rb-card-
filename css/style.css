@@ -100,10 +100,10 @@ header.sticky {
     font-weight: 500 !important;
     text-transform: uppercase !important;
     color: var(--black) !important;
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
+    /* padding-right: 0rem !important;
+    padding-left: 0rem !important; */
+    /* margin-right: 1rem !important;
+    margin-left: 1rem !important; */
 }
 
 .rg-no p {
@@ -206,11 +206,11 @@ header.sticky {
     /* margin-bottom: 6px; */
     font-size: 14px;
     font-family: var(--main-font);
-    padding: 4px 19px;
+    /* padding: 4px 19px;
     background: aliceblue;
     display: inline-block;
     border-radius: 20px 0 20px 0;
-    border: 1px dashed #000;
+    border: 1px dashed #000; */
 }
 
 .nw-para {
@@ -223,16 +223,20 @@ header.sticky {
     box-shadow: none;
     display: inline-block;
     position: relative;
-    border-radius: 10px;
-    background-color: var(--black);
-    padding: 16px 34px;
+    border-radius: 50px;
+    background-color: var(--colorgreen);
+    padding: 12px 21px;
     font-weight: 600;
     color: var(--white);
     line-height: normal;
     transition: all ease 0.5s;
     border: none;
     font-family: var(--main-font);
-    font-size: 15px;
+    font-size: 14px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 a.default-btn {
@@ -240,8 +244,8 @@ a.default-btn {
 }
 
 a.default-btn:hover {
-    color: var(--black);
-    background-color: var(--primary-color);
+    color: #fff;
+    background-color: var(--black);
 }
 
 img.img-fluid.one {
@@ -456,7 +460,7 @@ img.hero-image-2 {
     position: relative;
     padding-left: 35px;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--black);
     font-family: var(--main-font);
 }
@@ -478,12 +482,12 @@ img.hero-image-2 {
 
 .default-btn.two {
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--colorgreen);
 }
 
 .default-btn.two:hover {
     color: var(--colorgreen);
-    background-color: var(--primary-color);
+    background-color: var(--black);
 }
 
 .title-sec1 {
@@ -857,11 +861,18 @@ i.fa-solid.fa-arrow-up.right-bottom {
     font-family: var(--main-font);
 }
 
+.feature-provide span {
+    color: var(--colorgreen);
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+}
+
 .form-control {
     border-top: 0px !important;
     border-left: 0px !important;
     border-right: 0px !important;
-    border-bottom: 2px solid var(--back-color) !important;
+    border-bottom: 1px solid #0c2e3754 !important;
     padding: 0px !important;
 }
 
