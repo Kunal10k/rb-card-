@@ -1422,8 +1422,10 @@ tbody tr td .success {
 
 .nc tr th:first-child,
 .nc tr td:first-child {
-    background: #401245;
-    background: linear-gradient(307deg, rgb(192, 63, 206) 0%, rgb(242, 127, 73) 100%);
+    /* background: #401245;
+    background: linear-gradient(307deg, rgb(192, 63, 206) 0%, rgb(242, 127, 73) 100%); */
+    background: #0c2e37;
+
     color: #fff;
     text-align: left;
     padding-left: 15px;
@@ -1432,8 +1434,9 @@ tbody tr td .success {
 }
 
 tbody tr td:first-child {
-    background: #401245;
-    background: linear-gradient(307deg, rgb(192, 63, 206) 0%, rgb(242, 127, 73) 100%);
+    /* background: #401245;
+    background: linear-gradient(307deg, rgb(192, 63, 206) 0%, rgb(242, 127, 73) 100%); */
+    background: #0c2e37;
 
     color: #fff;
     font-weight: 500;
