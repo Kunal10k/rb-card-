@@ -122,3 +122,59 @@
          behavior: "smooth"
      });
  });
+
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+     const header = document.getElementById("mainHeader");
+
+     window.addEventListener("scroll", function () {
+         if (window.scrollY > 50) {
+             header.classList.add("scrolled");
+         } else {
+             header.classList.remove("scrolled");
+         }
+     });
+ });
+
+
+
+ const carouselElement = document.querySelector('#fadeCarousel');
+ const carousel = new bootstrap.Carousel(carouselElement);
+
+ function animateCurrentSlide() {
+     const activeSlide = document.querySelector('.carousel-item.active');
+     const animatedEls = activeSlide.querySelectorAll('.animate-caption');
+
+     gsap.fromTo(animatedEls, {
+         opacity: 0,
+         y: 40
+     }, {
+         opacity: 1,
+         y: 0,
+         duration: 1,
+         stagger: 0.2,
+         ease: "power3.out"
+     });
+ }
+
+ // Initial load animation
+ window.addEventListener('load', animateCurrentSlide);
+
+ // Re-animate on slide change
+ carouselElement.addEventListener('slid.bs.carousel', () => {
+     animateCurrentSlide();
+ });
+
+ // Animate button click
+ document.querySelectorAll('.animate-button').forEach(btn => {
+     btn.addEventListener('click', () => {
+         gsap.to(btn, {
+             scale: 0.9,
+             duration: 0.15,
+             yoyo: true,
+             repeat: 1,
+             ease: "power1.inOut"
+         });
+     });
+ });

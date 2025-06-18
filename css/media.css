@@ -1,3 +1,27 @@
+@media screen and (max-width: 1045px) {
+    .slider .carousel .carousel-inner .carousel-caption h2 {
+
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .slider .carousel .carousel-inner .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+
+    .slider .carousel .carousel-inner .carousel-item {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+
+
 @media screen and (max-width: 767.68px) {
 
     .banner-sec {
@@ -146,6 +170,12 @@
         margin-bottom: 25px;
     }
 
+    .navbar-nav .nav-link {
+
+        color: #274760;
+
+    }
+
 
 
 
@@ -266,27 +296,35 @@
         align-items: center;
     }
 
-}
-/* price plane  */
-
-/* .desktop,
-.mobile {
-    display: none;
-}
-
-
-@media (min-width: 1056px) {
-    .desktop {
-        display: block;
+    .slider .carousel .carousel-inner .carousel-caption {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 10%;
+        top: 3rem;
+        z-index: 99;
+        text-align: left;
     }
+
+  
+
+    .slider .carousel .carousel-inner .carousel-caption h6 {
+        font-size: 11px;
+        margin-bottom: 0.5rem;
+    }
+
+    .slider .carousel .carousel-inner .carousel-caption h2 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .slider .carousel .carousel-inner .carousel-caption p {
+        font-size: 13px;
+    }
+
 }
 
 
-@media (max-width: 1055px) {
-    .mobile {
-        display: block;
-    }
-} */
 
 
 /* Default: hide both (optional fallback) */
